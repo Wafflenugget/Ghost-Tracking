@@ -1,11 +1,14 @@
-This is a ghost hunting web for kids and it's not THAT scary. The instructions are to....
+# Ghost Tracker: A Spooky Adventure for Kids!
 
-No.1 Go in a pitch black room with your friends and family or alone.
-No.2 Decide who will be the person who reads out what the screen says in a scary voice (only one person). That person should stay out the room and whisper inside the pitch black room.
-No.3 Everyone EXCEPT the person reading should be in a blindfold sitting in criss-cross in a circle holding hands.
-No.4 In the center of the circle, light a red candle and you MUST NOT play once the candle blows out for saftey precaustions.
-No.5 To leave or play again you must say these words exactly, "Oh Dear Mother Mother Mother. I enjoyed playing. May I have the permisiion to leave (or play again)?" to know the response, you must get a blank paper, draw a line in the middle of the paper, and on each side write yes or no, get a pencil ad see where it lands on.
+This is a ghost hunting web for kids, and it's not THAT scary. Follow these instructions for a thrilling experience:
+
+1. **Go into a pitch-black room** with your friends, family, or alone.
+2. **Decide who will read** the screen instructions in a scary voice (only one person). This person should stay outside the room and whisper inside.
+3. **Everyone except the reader** should be blindfolded, sitting in a circle while holding hands.
+4. **In the center of the circle**, light a red candle. **IMPORTANT**: Do not play once the candle blows out for safety precautions.
+5. **To leave or play again**, say: "Oh Dear Mother Mother Mother. I enjoyed playing. May I have permission to leave (or play again)?" 
+   - Use a blank paper divided in the middle with "Yes" on one side and "No" on the other. See where the pencil lands.
 
 (Optional) If you want, you can play scary music inside the room.
 
-Good luck!
+**Good luck, brave ghost hunters!**
