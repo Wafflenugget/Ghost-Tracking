@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Function to add two different threatening messages
+    // Function to add one random threatening message
     function addThreateningMessage() {
         const messages = [
             "It's right behind you...",
@@ -25,44 +25,34 @@ document.addEventListener('DOMContentLoaded', () => {
             "You shouldn't have come here..."
         ];
 
-        // Count existing messages
-        const existingMessages = document.querySelectorAll('.threat-message');
-
-        // Check if there are already two messages on the screen
-        if (existingMessages.length >= 2) {
-            return; // Exit if there are already 2 messages
+        // Check if there's already a message on the screen
+        const existingMessage = document.querySelector('.threat-message');
+        if (existingMessage) {
+            return; // Exit if there's already a message
         }
 
-        // Select two different random messages
-        let messageIndexes = [];
-        while (messageIndexes.length < 2) {
-            const randomIndex = Math.floor(Math.random() * messages.length);
-            if (!messageIndexes.includes(randomIndex)) {
-                messageIndexes.push(randomIndex);
-            }
-        }
+        // Select one random message
+        const randomIndex = Math.floor(Math.random() * messages.length);
 
-        // Create and display two different messages
-        messageIndexes.forEach(index => {
-            const messageDiv = document.createElement('div');
-            messageDiv.textContent = messages[index];
-            messageDiv.className = 'threat-message';
-            document.body.appendChild(messageDiv); // Append directly to the body
+        // Create and display the message
+        const messageDiv = document.createElement('div');
+        messageDiv.textContent = messages[randomIndex];
+        messageDiv.className = 'threat-message';
+        document.body.appendChild(messageDiv); // Append directly to the body
 
-            // Set random position within the viewport
-            messageDiv.style.top = `${Math.random() * 80}%`; // Ensures the message stays within the visible area
-            messageDiv.style.left = `${Math.random() * 80}%`;
-        });
+        // Set random position within the viewport
+        messageDiv.style.top = `${Math.random() * 80}%`; // Ensures the message stays within the visible area
+        messageDiv.style.left = `${Math.random() * 80}%`;
 
-        // Remove the messages after 4 seconds
+        // Remove the message after 4 seconds
         setTimeout(() => {
-            document.querySelectorAll('.threat-message').forEach(msg => msg.remove());
+            messageDiv.remove();
         }, 4000);
     }
 
     // Start tracking button event listener
     document.getElementById('start-tracking').addEventListener('click', () => {
         startCamera();
-        setInterval(addThreateningMessage, 3000); // Add two messages every 3 seconds
+        setInterval(addThreateningMessage, 3000); // Add one message every 3 seconds
     });
 });
